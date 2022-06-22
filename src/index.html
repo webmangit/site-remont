@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {
+"title": "Ремонт ванных комнат в СПб"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/header.html', {})
+        <main class="page">
+            <!-- Компонент: section-service-->
+            @@include('html/section-service.html', {
+            "service-title": "Ремонт ванной",
+            "img": "img/bath.jpg"
+            })
+
+            <!-- Компонент:  section-calc-->
+            @@include('html/section-calc.html', {})
+
+            <!-- Компонент:  section-video-->
+            @@include('html/section-video.html', {
+            "video-title": "Видео ремонта ванных",
+            "video-1": "https://vk.com/video_ext.php?oid=-15028247&id=456239087&hash=e1af710cb8fc7fc1&hd=3",
+            "video-2": "https://vk.com/video_ext.php?oid=-15028247&id=456239086&hash=35640428497212a1&hd=2",
+            "video-3": "https://vk.com/video_ext.php?oid=-15028247&id=456239085&hash=7880be75aec1afcc&hd=2",
+            "video-4": "https://vk.com/video_ext.php?oid=-15028247&id=456239083&hash=6e87aabade472069&hd=2",
+            "video-5": "https://vk.com/video_ext.php?oid=-15028247&id=456239082&hash=bb4f5a825e57aff8&hd=2",
+            "video-6": "https://vk.com/video_ext.php?oid=-15028247&id=456239080&hash=cf3a6c1401d6eb88&hd=2"
+            })
+
+            <!-- Компонент:  section-structure-->
+            @@include('html/section-structure.html', {})
+
+            <!-- Компонент:  section-question-->
+            @@include('html/section-question.html', {})
+
+            <!-- Компонент:  section-master-->
+            @@include('html/section-master.html', {})
+
+            <!-- Компонент:  section-guarantee-->
+            @@include('html/section-guarantee.html', {})
+        </main>
+        @@include('html/footer.html', {})
+    </div>
+
+    @@include('html/popup.html', {})
+    @@include('html/vk.html', {})
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>

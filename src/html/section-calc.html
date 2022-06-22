@@ -1,0 +1,72 @@
+<section class="calc">
+    <div class="calc__container _container _container-section">
+        <span class="decor-line decor-line_turn"></span>
+        <h2 class="calc__title title-h2 title-h2-margin">
+            Калькулятор ремонта
+        </h2>
+        <div class="calc__sub-title sub-title sub-title-margin">
+            Рассчитайте стоимость вашего ремонта прямо сейчас
+        </div>
+        <form name="calcForm" class="calc__form" action="#" method="get">
+            <div class="calc__item calc-data">
+                <div class="calc-data__item">
+                    <div class="calc-data__item-title">Тип помещения</div>
+                    <div class="calc-data__item-body">
+                        <select class="calc-data__item-select" name="typeRoom" tabindex="1">
+                            <option class="calc-data__item-option" value="Ванная" selected>Ванная</option>
+                            <option class="calc-data__item-option" value="Туалет">Туалет</option>
+                            <option class="calc-data__item-option" value="Совмещенный с/у">Совмещенный с/у</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="calc-data__item">
+                    <div class="calc-data__item-title">Тип ремонта</div>
+                    <div class="calc-data__item-body">
+                        <select class="calc-data__item-select" name="typeRepair" tabindex="2">
+                            <option class="calc-data__item-option" value="Эконом" selected>Эконом</option>
+                            <option class="calc-data__item-option" value="Капитальный">Капитальный</option>
+                            <option class="calc-data__item-option" value="Дизайнерский">Дизайнерский</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="calc-data__item">
+                    <div class="calc-data__item-title">Тип дома</div>
+                    <div class="calc-data__item-body">
+                        <select class="calc-data__item-select" name="typeHome" tabindex="3">
+                            <option class="calc-data__item-option" value="Новостройка" selected>Новостройка </option>
+                            <option class="calc-data__item-option" value="Вторичка">Вторичка</option>
+                            <option class="calc-data__item-option" value="Старый фонд">Старый фонд</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- <div class="calc-data__item">
+                    <div class="calc-data__item-title">Площадь</div>
+                    <div class="calc-data__item-body">
+                        <input class="calc-data__item-input" type="tel" name="space" tabindex="4" placeholder="0">
+                        <div class="calc-data__item-body-mix">
+                            <div class="calc-data__item-title calc-data__item-title_m">С/У</div>
+                            <input class="calc-data__item-checkbox" type="checkbox" name="cy" value="yes" tabindex="4">
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <div class="calc__item calc-result">
+                <div class="calc-result__block-price">
+                    <div class="calc-result__price-text">Стоимость ремонта</div>
+                    <div class="calc-result__price">
+                        <span class="calc-result__price-number">0</span> <span>руб</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="calc__item calc-feedback">
+                <div class="calc-feedback__warning">
+                    Стоимость <span>без учет материалов!</span>
+                </div>
+                <div class="calc-feedback__button button button_mw">
+                    <a href="#popup" class="button__style popup-link">Расчет с материалами</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>

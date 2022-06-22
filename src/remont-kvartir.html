@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {
+"title": "Ремонт квартир в СПб"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/header.html', {})
+        <main class="page">
+            <!-- Компонент: section-service-->
+            @@include('html/section-service.html', {
+            "service-title": "Ремонт квартир",
+            "img": "img/room.jpg"
+            })
+
+            <!-- Компонент:  section-calc-flat-->
+            @@include('html/section-calc-flat.html', {})
+
+            <!-- Компонент:  section-video-->
+            @@include('html/section-video.html', {
+            "video-title": "Видео ремонта квартир",
+            "video-1": "https://vk.com/video_ext.php?oid=-55573458&id=456239324&hash=a3c92b03f20a6b2d&hd=2",
+            "video-2": "https://vk.com/video_ext.php?oid=-55573458&id=456239323&hash=63147962464c3430&hd=3",
+            "video-3": "https://vk.com/video_ext.php?oid=-55573458&id=456239321&hash=ff089e908be49a58&hd=2",
+            "video-4": "https://vk.com/video_ext.php?oid=-55573458&id=456239320&hash=34385831649a6511&hd=2",
+            "video-5": "https://vk.com/video_ext.php?oid=-55573458&id=456239319&hash=9ac45f818c473049&hd=2",
+            "video-6": "https://vk.com/video_ext.php?oid=-55573458&id=456239318&hash=b54eee3e3756ed22&hd=2"
+            })
+
+            <!-- Компонент:  section-structure-->
+            @@include('html/section-structure.html', {})
+
+            <!-- Компонент:  section-question-->
+            @@include('html/section-question.html', {})
+
+            <!-- Компонент:  section-master-->
+            @@include('html/section-master.html', {})
+
+            <!-- Компонент:  section-guarantee-->
+            @@include('html/section-guarantee.html', {})
+        </main>
+        @@include('html/footer.html', {})
+    </div>
+
+    @@include('html/popup.html', {})
+    @@include('html/vk.html', {})
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>
